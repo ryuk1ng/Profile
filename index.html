@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chacal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url("https://i.pinimg.com/originals/f6/45/c2/f645c2192bbd32e613092927c065a5ac.gif");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: white;
+}
+
+    @keyframes gradient {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+}
+
+    body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(5px);
+  z-index: 0;
+}
+
+
+    .card {
+  position: relative;
+  z-index: 2;
+  width: 90%;
+  max-width: 420px;
+  overflow: hidden;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 25px;
+  box-shadow: 0 0 45px rgba(245, 239, 239, 0.815);
+}
+
+    .banner {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .content {
+    position: relative;
+    padding: 0 35px 35px;
+}
+
+.content::before {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background-image: url("https://i.pinimg.com/originals/a7/5c/d6/a75cd6ff33fba64909e066289d05daee.gif");
+    background-size: cover;
+    background-position: center;
+
+    opacity: 1;
+
+    pointer-events: none;
+}
+
+.content > * {
+    position: relative;
+    z-index: 1;
+}
+
+    .avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 4px solid #dad9db;
+      object-fit: cover;
+      margin-top: -60px;
+      margin-bottom: 15px;
+      position: relative;
+      z-index: 2;
+      background: #111;
+      box-shadow: 0 0 25px rgba(187, 187, 187, 0.8);
+    }
+
+    h1 {
+    font-size: 40px;
+    font-weight: 800;
+
+    background: linear-gradient(
+        180deg,
+        #ffffff,
+        #d8d8d8,
+        #9e9e9e
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    letter-spacing: -2px;
+
+    margin-bottom: 8px;
+}
+
+    p {
+      color: #ccc;
+      margin-bottom: 25px;
+    }
+
+    .link {
+    display: block;
+    padding: 15px;
+    margin: 12px 0;
+
+    border-radius: 14px;
+
+    color: rgba(255,255,255,.9);
+    text-decoration: none;
+
+    background: transparent;
+
+    border: none;
+
+    backdrop-filter: blur(2px);
+
+    transition: .3s;
+}
+
+.link:hover {
+    background: rgba(251, 248, 253, 0.75);
+
+    border: 1px solid rgba(255,255,255,.15);
+
+    transform: scale(1.03);
+
+    box-shadow: 0 0 25px rgba(249, 247, 250, 0.8);
+}
+
+    .link:hover {
+      background: hsl(270, 1%, 63%);
+      transform: scale(1.04);
+      box-shadow: 0 0 20px #89898a;
+    }
+
+    .footer {
+      margin-top: 25px;
+      font-size: 13px;
+      color: #888;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card">
+
+    <img class="banner" src="https://i.pinimg.com/736x/ff/e7/24/ffe72445295a8be1229cd64fae9ad2a1.jpg" alt="Banner">
+
+    <div class="content">
+      <img class="avatar" src="https://i.pinimg.com/736x/71/c6/14/71c614a640b909e237169e0fcd3f8346.jpg" alt="Avatar">
+
+      <h1>Ryuk1ng</h1>
+      <p>Developer • Gamer • Vegas Editor</p>
+
+      <a class="link" href="https://discord.gg/WdyRwGh3dv" target="_blank">Discord</a>
+      <a class="link" href="https://www.instagram.com/thz.wrx/" target="_blank">Instagram</a>
+      <a class="link" href="https://www.tiktok.com/@flow.province" target="_blank">TikTok</a>
+      <a class="link" href="https://open.spotify.com/playlist/4ceVMH4amwThuxhZQbMrRT?si=50e1ba0be90e47c7" target="_blank"><img class="text" src="https://imgs.search.brave.com/LBtCO8D966XmyND3f7zk8A9Fhmb4rBowj9ESJbFxnEw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMjMv/OTg2LzcyOC9zbWFs/bC9zcG90aWZ5LWxv/Z28tc3BvdGlmeS1s/b2dvLXRyYW5zcGFy/ZW50LXNwb3RpZnkt/aWNvbi10cmFuc3Bh/cmVudC1mcmVlLWZy/ZWUtcG5nLnBuZw" alt="Text"
+        width="60px"></a>
+
+      <div class="footer">Made by Me</div>
+    </div>
+
+  </div>
+</body>
+</html>
